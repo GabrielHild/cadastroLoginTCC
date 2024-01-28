@@ -153,12 +153,14 @@ input[type="checkbox"]:checked + label{
     label.btnConfig{
         width: 13vh;
         height: 4.5vh;
+        padding: 4px 4px;
     }
 }
 @media (max-width: 1700px) {
     label.btnConfig{
         width: 16vh;
         height: 5vh;
+        padding: 2.5vh 3vh;
     }
 }
 .categoria{
@@ -191,8 +193,8 @@ input[type="checkbox"]:checked + label{
     }
     .form-register{
         position: absolute;
-        background-color: var(--primary-color);
-        color: var(--secundary-color);
+        background-color: #f9f9f9;
+        color: #820AD1;
         transform: translateX(100%);
     }
     .login-container.move .form-register{
@@ -210,12 +212,52 @@ input[type="checkbox"]:checked + label{
     box-shadow: 0 5px 20px #A0A0A0;
     overflow: hidden;
 }
+@media(max-width:1000px) {
+    label.btnConfig{
+        width: 20vh;
+        height: 1vh;
+        padding: 1.5vh 10px;
+    }
+}
+@media (max-width:800px){
+    .mobile-text{
+        display: block;
+    }
+    .mobile-text a {
+        font-weight: 900;
+        color: inherit;
+    }
+    .login-container{
+        width: 100vw;
+        height: 100vw;
+        box-shadow: none;
+    }
+    label.btnConfig{
+        width: 13vh;
+        height: 4vh;
+        /* padding: 4px 4px; */
+    }
+}
 
 @media (max-width:768px){
-    .login-container{
-        width: 75vw;
-        height: 75vh;
+    .mobile-text{
+        display: block;
     }
+    .mobile-text a {
+        font-weight: 900;
+        color: inherit;
+    }
+    .login-container{
+        width: 100vw;
+        height: 100vw;
+        box-shadow: none;
+    }
+    label.btnConfig{
+        width: 13vh;
+        height: 4vh;
+        /* padding: 4px 4px; */
+    }
+    
 }
 
 @media (max-width:480px){
@@ -224,8 +266,13 @@ input[type="checkbox"]:checked + label{
         height: 100vh;
         box-shadow: none;
     }
+    label.btnConfig{
+        width: 20vh;
+        height: 5vh;
+        font-size: 13px;
+        /* padding: 4px 4px; */
+    }
 }
-
 /* main */
 main {
     background-color: #f9f9f9;
@@ -240,15 +287,7 @@ main {
     display: none;
 }
 
-@media (max-width:768px){
-    .mobile-text{
-        display: block;
-    }
-    .mobile-text a {
-        font-weight: 900;
-        color: inherit;
-    }
-}
+
 .input2part{
     display: inline-block;
     padding-bottom: 5px;
