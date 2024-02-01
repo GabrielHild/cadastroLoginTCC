@@ -7,7 +7,7 @@ document.getElementById('open-register').addEventListener('click', moveOverlay)
 
 // talvez nn use
 document.getElementById('open-login').addEventListener('click', moveOverlay)
-
+document.getElementById('back1').addEventListener('click', moveOverlay)
 document.getElementById('open-register-mobile').addEventListener('click', moveOverlay)
 
 //talvez nn use
