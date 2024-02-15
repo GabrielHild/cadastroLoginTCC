@@ -105,9 +105,8 @@ form .form-input-container .input:valid ~ label{
 .radio-box{
     font-size: 12px;
     color: #820AD1;
-    
+    accent-color: #820AD1;
 }
-
 input[type="checkbox"]{
     display: none;
 }
