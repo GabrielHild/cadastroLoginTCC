@@ -92,13 +92,13 @@ form .form-input-container .input:valid ~ label{
     transition: 1s;
 }
 
-.form-part2{
+.form-register{
     transform: translateX(-100%);
     z-index: -1;
     opacity: 0;
 }
 
-.form-part2 .categoria .checkCategora{
+.form-register .categoria .checkCategora{
     padding: .5vh 1vh;
 }
 
@@ -106,56 +106,6 @@ form .form-input-container .input:valid ~ label{
     font-size: 12px;
     color: #820AD1;
     
-}
-
-input[type="checkbox"]{
-    display: none;
-}
-label.labelRadio{
-    display: inline-block;
-}
-label.btnConfig{
-    position: relative;
-    color: #820AD1;
-    border: 3px solid #820AD1;
-    border-radius: 10px;
-    font-size: 13px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 8rem;
-    height: 3rem;
-    padding: 4px 4px;
-}
-input[type="checkbox"]:checked + label{
-    background-color: #820AD1;
-    color: white;
-    -webkit-box-shadow: 3px 3px 6px 1px #858585;
-    box-shadow: 3px 3px 6px 1px #858585;
-}
-.categoria{
-    padding-bottom: 1vh;
-}
-
-.register-container.move .form-part1{
-    transform: translateX(100%);
-}
-
-.register-container.move .form-part2{
-    transform: translateX(0%);
-    z-index: 1;
-    opacity: 1;
-}
-
-.input2part{
-    display: inline-block;
-}
-.input2part #cidade{
-    width: 200px;
-}
-.input2part #estado{
-    width: 90px;
 }
 /* login container */
 .register-container{
@@ -181,23 +131,15 @@ main {
     display: none;
 }
 
-
-.input2part{
-    display: inline-block;
-    padding-bottom: 5px;
-}
 /* overlay container */
 .overlay-container{
     position: absolute;
     top:0;
-    left: 0;
+    left: 50%;
     width: 50%;
     height: 100%;
     color: #f9f9f9;
     text-align: center;
-    transform: translateX(100%);
-    z-index: 10;
-    transition: 1s;
 }
 textarea{
     border-radius: 10px;
@@ -212,13 +154,10 @@ textarea::placeholder{
     font-size: 14px;
 }
 
-.form-part2 p{
-    color: #820AD1;
+.form-register p{
+     color: #820AD1;
 }
 
-.register-container.move .overlay-container{
-    transform: translateX(0%);
-}
 /* overley */
 .overlay{
     position: absolute;
@@ -241,25 +180,6 @@ p span.textOverlay{
     text-decoration: underline;
 
 }
-.register-container.move .overlay:nth-child(2) {
-    z-index: -1;
-    opacity: 0;
-}
-.register-container.move .overlay{
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 0;
-}
-.btnVoltar{
-    padding: 5px 10px;
-    border: 3px solid #f9f9f9;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.btnVoltar2{ 
-    padding: 0;
-    margin: 0;
-    font-size:0;
-}
 .form-text{
     font-size: 5vh;
 }
@@ -268,24 +188,9 @@ img{
 }
 
 /* responsividade */
-
-@media(max-width:1000px) {
-    label.btnConfig{
-        /* width: 16vh;
-        height: 5vh; */
-        padding: 1.5vh 10px;
-    }
-}
 @media (max-width:900px){
-    .btnVoltar2{
-        display: flex;
-        justify-content: center;
-        margin: 0 0 1px 0;
-        padding: 5px 5px;
-        border: 1px solid #820AD1;
-        border-radius: 50px;
-        cursor: pointer;
-        font-size: 11px;
+    .overlay-container{
+        display: none;
     }
     .form{
         width: 100%;
@@ -294,18 +199,6 @@ img{
     .form-button{
         background-color: #820AD1;
         color: #f9f9f9;
-    }
-    .form-part2{
-        position: absolute;
-        background-color: #f9f9f9;
-        color: #820AD1;
-        transform: translateX(100%);
-    }
-    .register-container.move .form-part2{
-        transform: translateX(0%);
-    }
-    .overlay-container{
-        display: none;
     }
     .mobile-text{
         display: block;
@@ -331,18 +224,6 @@ img{
         background-color: #820AD1;
         color: #f9f9f9;
     }
-    .form-part2{
-        position: absolute;
-        background-color: #f9f9f9;
-        color: #820AD1;
-        transform: translateX(100%);
-    }
-    .register-container.move .form-part2{
-        transform: translateX(0%);
-    }
-    .overlay-container{
-        display: none;
-    }
     .mobile-text{
         display: block;
     }
@@ -358,15 +239,12 @@ img{
 
     
 }
-@media (max-width:700px){
-    .form-part2{
+@media(max-width:715px){
+    form.form.form-login{
         padding: 0;
     }
 }
 @media (max-width:600px){
-    .form-part2{
-        padding: 10%;
-    }
     .register-container{
         width: 100vw;
         height: 100vh;
@@ -374,36 +252,10 @@ img{
     }
 }
 @media (max-width:490px){
-    .form-part2{
-        padding: calc(4vh);
-    }
     .register-container{
         width: 100vw;
         height: 100vh;
         box-shadow: none;
-    }
-    label.btnConfig{
-        /* width: 17vh;
-        height: 5vh; */
-        font-size: 13px;
-    }
-}
-@media (max-width:375px){
-    label.btnConfig{
-        /* width: 17vh;
-        height: 6vh; */
-        font-size: 13px;
-    }
-}
-@media (max-width:368px){
-    .input2part{
-        margin-bottom: 2vh;
-    }
-    .input2part #cidade{
-        width: 80vw;
-    }
-    .input2part #estado{
-        width: 80vw;
     }
 }
 @media screen and (max-width:300px) {
@@ -421,7 +273,7 @@ img{
         font-size: 13px;
     }
     .labelRadio{
-        font-size: 11px;
+        font-size: 3.5vw;
         margin: 10px 0;
     }
     .form-button{
@@ -434,41 +286,7 @@ img{
         height: 90vh;
         box-shadow: none;
     }
-    .checkCategora.btn-group.col-6{
-        display: flex;
-        justify-content: center; 
-        padding: 3px 0 3px 0;
-        margin: 0;
-    }
-    .form-part1{
+    .form-login{
         padding: 0;
-    }
-    .categoria .title-categoria{
-       width: 90vw;
-       font-size: 14px ;
-    }
-    label.btnConfig{
-        width: 6rem;
-        height: 3rem; 
-        padding: 0;
-    }
-    .input2part{
-        margin-bottom: 2vh;
-        justify-content: center;
-        display: flex;
-    }
-    .input2part #cidade{
-        width: 90vw;
-    }
-    .input2part #estado{
-        width: 90vw;
-        
-    }
-    .form-part2{
-        padding: 0;
-    }
-    textarea{
-        min-width: 90vw;
-        max-height: 80px;
     }
 }

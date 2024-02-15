@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/register-cliente.css">
+    <title>sla</title>
+</head>
+<body>
+    <main>
+        <div class="register-container"">
+            <div class="form-container">              
+                <!-- Primeira parte -->
+                <form class="form form-login">
+                    <i class="bi bi-person-circle"></i>
+                    <h2 class="form-title">Cadastre-se</h2>
+                        <div class="form-input-container">
+                            <input type="text" class="input" id="nome" required>
+                            <label for="nome">Nome Completo | Nome Empresa</label>
+                        </div>
+                        
+                        <div class="form-input-container">
+                            <input type="text" class="input " id="email" required>
+                            <label for="email">Endereço de Email</label>
+                        </div>
+    
+                        <div class="form-input-container">
+                            <input type="password" class="input" id="senha" required>
+                            <label for="senha">Senha</label>
+                        </div>
+                        
+                        <div class="form-input-container">
+                            <input type="password" class="input" id="confirmSenha" required>
+                            <label for="confirmSenha">Confirmar Senha</label>
+                        </div>
+    
+                        <div class="form-input-container">
+                            <input type="number" class="input" id="cnpj-cpf" required>
+                            <label for="cnpj-cpf">CNPJ / CPF</label>
+                        </div>
+    
+                        <div class="form-input-container">
+                            <input type="number" class="input" id="numero" required>
+                            <label for="numero">Número de Telefone</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" class="radio-box align-middle" id="radio">
+                            <label for="radio" class="labelRadio align-middle">Termos e Condições - Política de Privacidade</label>
+                        </div>
+                    <button type="button" class="form-button">Cadastrar</button>
+                </form>
+            </div>
+            <!-- overlay -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <img src="../img/TESTEE1.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
