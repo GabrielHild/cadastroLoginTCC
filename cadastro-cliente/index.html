@@ -15,7 +15,7 @@
         <div class="register-container"">
             <div class="form-container">              
                 <!-- Primeira parte -->
-                <form class="form form-login">
+                <form class="form form-register">
                     <i class="bi bi-person-circle"></i>
                     <h2 class="form-title">Cadastre-se</h2>
                         <div class="form-input-container">
@@ -40,12 +40,22 @@
     
                         <div class="form-input-container">
                             <input type="number" class="input" id="cnpj-cpf" required>
-                            <label for="cnpj-cpf">CNPJ / CPF</label>
+                            <label for="cnpj-cpf">CPF</label>
                         </div>
     
                         <div class="form-input-container">
                             <input type="number" class="input" id="numero" required>
                             <label for="numero">Número de Telefone</label>
+                        </div>
+                        <div class="form-input-endereco">
+                            <div class="form-input-container input-endereco">
+                                <input type="text" class="input" id="cidade" required>
+                                <label for="cidade">Cidade</label>
+                            </div>                    
+                            <div class="form-input-container input-endereco">
+                                <input type="text" class="input" id="estado" required>
+                                <label for="estado">Estado</label>
+                            </div>
                         </div>
                         <div class="radio-box">
                             <input type="radio" class="radio-box align-middle" id="radio">
